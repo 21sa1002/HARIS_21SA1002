@@ -14,7 +14,7 @@ namespace Toko_Bangunan_Watumas_Jaya
     public partial class formLogin : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-DL0NFGV\ANGGA;Initial Catalog=tokoBangunan;Integrated Security=True");
+        SqlConnection con = new SqlConnection("@Data Source=riezj\SQLEXPRESS01;Initial Catalog=tokoBangunan;Integrated Security=True");
         public formLogin()
         {
             InitializeComponent();
