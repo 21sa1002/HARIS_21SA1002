@@ -15,7 +15,7 @@ CREATE TABLE tbPenjualan (
 );
 
 -- Tabel tbBarang
-CREATE TABLE IF NOT EXISTS tbBarang (
+CREATE TABLE tbBarang (
     idBarang VARCHAR(6) PRIMARY KEY,
     namaBarang VARCHAR(255),
     hargaBarang INT,
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS tbBarang (
 );
 
 -- Tabel detailPenjualan
-CREATE TABLE IF NOT EXISTS detailPenjualan (
+CREATE TABLE detailPenjualan (
     idPesanan VARCHAR(6),
     idPenjualan VARCHAR(6),
     idBarang VARCHAR(6),
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS detailPenjualan (
 );
 
 -- Tabel tbPelanggan
-CREATE TABLE IF NOT EXISTS tbPelanggan (
+CREATE TABLE tbPelanggan (
     idPelanggan VARCHAR(6) PRIMARY KEY,
     namaPelanggan VARCHAR(255),
     telepon VARCHAR(20),
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS tbPelanggan (
 );
 
 -- Tabel tbKaryawan
-CREATE TABLE IF NOT EXISTS tbKaryawan (
+CREATE TABLE tbKaryawan (
     idKaryawan INT PRIMARY KEY AUTO_INCREMENT,
     username VARCHAR(255),
     password VARCHAR(255),
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS tbKaryawan (
 );
 
 -- Tabel pesanan
-CREATE TABLE IF NOT EXISTS pesanan (
+CREATE TABLE pesanan (
     idPesanan VARCHAR(6) PRIMARY KEY,
     idPelanggan VARCHAR(6),
     tanggalPesanan DATE,
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS pesanan (
 );
 
 -- Tabel tbSuplier
-CREATE TABLE IF NOT EXISTS tbSuplier (
+CREATE TABLE tbSuplier (
     idSuplier VARCHAR(6) PRIMARY KEY,
     namaSuplier VARCHAR(255),
     tipeBarang VARCHAR(255),
@@ -69,7 +69,7 @@ CREATE TABLE IF NOT EXISTS tbSuplier (
 );
 
 -- Tabel kategori_barang
-CREATE TABLE IF NOT EXISTS kategori_barang (
+CREATE TABLE kategori_barang (
     idkategori VARCHAR(6) PRIMARY KEY,
     namaKategori VARCHAR(255),
     tipeSatuan INT,
